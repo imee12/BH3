@@ -131,11 +131,35 @@
                     <navigationItem key="navigationItem" id="pCD-nF-Boe"/>
                     <connections>
                         <outlet property="findBtn" destination="hye-oT-edp" id="CdO-nJ-GFN"/>
+                        <segue destination="AfH-2g-qgH" kind="push" identifier="goToUsers2" id="9hR-l5-ZgT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KIs-Lo-tEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077" y="1006"/>
+            <point key="canvasLocation" x="700" y="982"/>
+        </scene>
+        <!--Bear View Controller-->
+        <scene sceneID="Chb-vo-Zet">
+            <objects>
+                <viewController storyboardIdentifier="BearViewController" id="3Mi-oN-wRW" customClass="BearViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="caR-EE-egC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dummy Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OR1-RJ-yWK">
+                                <rect key="frame" x="90" y="70" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8U-Sy-E0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="913"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xov-xg-Cux">
@@ -164,4 +188,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="9hR-l5-ZgT"/>
+    </inferredMetricsTieBreakers>
 </document>

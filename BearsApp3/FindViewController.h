@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "RFduinoManager.h"
 #import "RFduino.h"
+#import "SmartBear.h"
+#import <Parse/Parse.h>
 
 @class RFduinoManager;
 @class RFduino;
@@ -36,5 +38,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *findBtn;
 @property (strong, nonatomic) UIWindow *window;
+
+@property(strong,nonatomic) RFduino *rfduino;
 
 @end

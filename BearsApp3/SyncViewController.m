@@ -13,6 +13,8 @@
 #import "RFduinoManager.h"
 #import "RFduino.h"
 
+#import "BearsApp3-Swift.h"
+
 //#import "BearViewController.h"
 
 
@@ -308,8 +310,8 @@
     loadService = false;
 }
 
-//- (void)didLoadServiceRFduino:(RFduino *)rfduino
-//{
+- (void)didLoadServiceRFduino:(RFduino *)rfduino
+{
 //    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 //    UsersViewController *viewController =[storyboard instantiateViewControllerWithIdentifier:@"UsersViewController"];
 //    
@@ -317,7 +319,7 @@
 //    
 //    loadService = true;
 //    [[self navigationController] pushViewController:viewController animated:YES];
-//}
+}
 
 
 - (void)didDisconnectRFduino:(RFduino *)rfduino

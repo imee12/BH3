@@ -37,6 +37,10 @@
 		9B093CB31B4454A4001DB31F /* RFduino.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CAA1B4454A4001DB31F /* RFduino.m */; };
 		9B093CB41B4454A4001DB31F /* RfduinoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CAD1B4454A4001DB31F /* RfduinoManager.m */; };
 		9B093CB81B4458F8001DB31F /* SyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CB71B4458F8001DB31F /* SyncViewController.m */; };
+		9B093CBC1B446881001DB31F /* SmartBear.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CBB1B446881001DB31F /* SmartBear.m */; };
+		9B093CBE1B447D2F001DB31F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CBD1B447D2F001DB31F /* main.m */; };
+		9B093CC11B44878F001DB31F /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CC01B44878F001DB31F /* AppViewController.m */; };
+		9B093CC41B448DF9001DB31F /* BearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CC31B448DF9001DB31F /* BearViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +80,7 @@
 		9B093C8E1B44412B001DB31F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9B093C901B444132001DB31F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B093C921B444173001DB31F /* BearsApp3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BearsApp3-Bridging-Header.h"; sourceTree = "<group>"; };
-		9B093C931B444174001DB31F /* BearsApp3Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearsApp3Header.m; sourceTree = "<group>"; };
+		9B093C931B444174001DB31F /* BearsApp3Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearsApp3Header.m; sourceTree = SOURCE_ROOT; };
 		9B093C951B4441B5001DB31F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9B093C9B1B4445A8001DB31F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B093C9D1B4446B1001DB31F /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,13 @@
 		9B093CAE1B4454A4001DB31F /* RFduinoManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFduinoManagerDelegate.h; sourceTree = "<group>"; };
 		9B093CB61B4458F8001DB31F /* SyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncViewController.h; sourceTree = "<group>"; };
 		9B093CB71B4458F8001DB31F /* SyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncViewController.m; sourceTree = "<group>"; };
+		9B093CBA1B446881001DB31F /* SmartBear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartBear.h; sourceTree = "<group>"; };
+		9B093CBB1B446881001DB31F /* SmartBear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartBear.m; sourceTree = "<group>"; };
+		9B093CBD1B447D2F001DB31F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B093CBF1B44878F001DB31F /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		9B093CC01B44878F001DB31F /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		9B093CC21B448DF9001DB31F /* BearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearViewController.h; sourceTree = "<group>"; };
+		9B093CC31B448DF9001DB31F /* BearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				9B093C951B4441B5001DB31F /* libsqlite3.dylib */,
-				9B093C931B444174001DB31F /* BearsApp3Header.m */,
 				9B093C901B444132001DB31F /* SystemConfiguration.framework */,
 				9B093C8E1B44412B001DB31F /* StoreKit.framework */,
 				9B093C8C1B444126001DB31F /* Security.framework */,
@@ -160,13 +170,20 @@
 		9B093C501B44401A001DB31F /* BearsApp3 */ = {
 			isa = PBXGroup;
 			children = (
+				9B093CBD1B447D2F001DB31F /* main.m */,
+				9B093C931B444174001DB31F /* BearsApp3Header.m */,
+				9B093CB91B446847001DB31F /* SmartBear */,
 				9B093CA41B4454A4001DB31F /* rfduino */,
 				9B093C731B4440F0001DB31F /* parse-library-1.7.4 */,
 				9B093C9B1B4445A8001DB31F /* LoginViewController.swift */,
 				9B093C9D1B4446B1001DB31F /* UsersViewController.swift */,
+				9B093CBF1B44878F001DB31F /* AppViewController.h */,
+				9B093CC01B44878F001DB31F /* AppViewController.m */,
 				9B093C531B44401A001DB31F /* AppDelegate.swift */,
 				9B093C551B44401A001DB31F /* ViewController.swift */,
 				9B093C571B44401A001DB31F /* Main.storyboard */,
+				9B093CC21B448DF9001DB31F /* BearViewController.h */,
+				9B093CC31B448DF9001DB31F /* BearViewController.m */,
 				9B093CB61B4458F8001DB31F /* SyncViewController.h */,
 				9B093CB71B4458F8001DB31F /* SyncViewController.m */,
 				9B093C9F1B444B5D001DB31F /* FindViewController.h */,
@@ -230,6 +247,15 @@
 			);
 			name = rfduino;
 			path = "../parse-library-1.7.4/rfduino";
+			sourceTree = "<group>";
+		};
+		9B093CB91B446847001DB31F /* SmartBear */ = {
+			isa = PBXGroup;
+			children = (
+				9B093CBA1B446881001DB31F /* SmartBear.h */,
+				9B093CBB1B446881001DB31F /* SmartBear.m */,
+			);
+			name = SmartBear;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,9 +364,13 @@
 				9B093C9E1B4446B1001DB31F /* UsersViewController.swift in Sources */,
 				9B093CB81B4458F8001DB31F /* SyncViewController.m in Sources */,
 				9B093CA11B444B5D001DB31F /* FindViewController.m in Sources */,
+				9B093CBC1B446881001DB31F /* SmartBear.m in Sources */,
 				9B093CB41B4454A4001DB31F /* RfduinoManager.m in Sources */,
+				9B093CC41B448DF9001DB31F /* BearViewController.m in Sources */,
 				9B093C941B444174001DB31F /* BearsApp3Header.m in Sources */,
 				9B093CB31B4454A4001DB31F /* RFduino.m in Sources */,
+				9B093CBE1B447D2F001DB31F /* main.m in Sources */,
+				9B093CC11B44878F001DB31F /* AppViewController.m in Sources */,
 				9B093C541B44401A001DB31F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +580,7 @@
 				9B093C6F1B44401A001DB31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B093C701B44401A001DB31F /* Build configuration list for PBXNativeTarget "BearsApp3Tests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +589,7 @@
 				9B093C721B44401A001DB31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

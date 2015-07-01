@@ -6,11 +6,17 @@
 //  Copyright (c) 2015 Imee Cuison. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "FindViewController.h"
 
-//#import "SyncViewController.h"
 #import "RFduinoManager.h"
 #import "RFduino.h"
+//#import "SmartBear.h"
+#import <Parse/Parse.h>
+#import "BearViewController.h"
+
+#import "BearsApp3-Swift.h"
 
 @interface FindViewController ()
 
@@ -27,6 +33,14 @@
 
 @implementation FindViewController
 
+@synthesize rfduino;
+
+
++ (void)load
+{
+    // customUUID = @"c97433f0-be8f-4dc8-b6f0-5343e6100eb4";
+}
+
 
 - (void)viewDidLoad
 {
@@ -36,6 +50,8 @@
     rfduinoManager = RFduinoManager.sharedRFduinoManager;
     
     rfduinoManager.delegate = self;
+
+    [rfduino setDelegate:self];
 
     
     
@@ -51,6 +67,13 @@
     rfduinoManager = RFduinoManager.sharedRFduinoManager;
     
     
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - RfduinoDiscoveryDelegate methods
@@ -94,19 +117,22 @@
     
     [rfduinoManager stopScan];
     
+
+    
+    
     loadService = false;
 }
 
-- (void)didLoadServiceRFduino:(RFduino *)rfduino
-{
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    UsersViewController *viewController =[storyboard instantiateViewControllerWithIdentifier:@"UsersViewController"];
-//
-//    viewController.rfduino = rfduino;
-//
-//    loadService = true;
-//    [[self navigationController] pushViewController:viewController animated:YES];
-}
+//- (void)didLoadServiceRFduino:(RFduino *)rfduino
+//{
+////    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+////    UsersViewController *viewController =[storyboard instantiateViewControllerWithIdentifier:@"UsersViewController"];
+////
+////    viewController.rfduino = rfduino;
+////
+////    loadService = true;
+////    [[self navigationController] pushViewController:viewController animated:YES];
+//}
 
 
 - (void)didDisconnectRFduino:(RFduino *)rfduino
@@ -121,11 +147,63 @@
 //    [self.tableView reloadData];
 }
 
-- (IBAction)FindBtn_click:(id)sender {
+- (void)sendByte:(uint8_t)byte
+{
+    uint8_t tx[1] = { byte };
+    NSData *data = [NSData dataWithBytes:(void*)&tx length:1];
+    [rfduino send:data];
+}
+
+
+//- (void)didReceive:(NSData *)data
+//{
+//    NSLog(@"RecievedData***");
+//    
+//    const uint8_t *value = [data bytes];
+//    // int len = [data length];
+//    
+//    NSLog(@"value = %x", value[0]);
+//    
+//    if (value[0])
+//        
+//        //[image1 setImage:on];
+//        
+//        //WRITE TO SEND MESSAGE VIA PARSE
+//        NSLog(@"Bear squeezed");
+//    else
+//        
+//        
+//        NSLog(@"Bear not Squeezed");
+//    
+//  //  [self uploadMessage];
+//  //
+//    
+//    
+//    
+//   //   [image1 setImage:off];
+//}
+
+
+- (void)didLoadServiceRFduino:(RFduino *)rfduino
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BearViewController *viewController =[storyboard instantiateViewControllerWithIdentifier:@"BearViewController"];
     
+    viewController.rfduino = rfduino;
+    
+    loadService = true;
+    [[self navigationController] pushViewController:viewController animated:YES];
+
+
     
 }
 
+
+- (void)refreshData
+{
+    NSLog(@"refreshData called");
+    [self viewWillAppear:true];
+}
 
 
 
@@ -134,9 +212,8 @@
     
     
     NSLog(@"Find Button Pushed");
-  //  rfduinoManager = RFduinoManager.sharedRFduinoManager;
+ [self performSegueWithIdentifier:@"goToUsers2" sender:self];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     
     
