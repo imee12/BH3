@@ -55,6 +55,8 @@
     
     [rfduino setDelegate:self];
     
+    self.navigationItem.hidesBackButton = YES;
+    
     UIColor *start = [UIColor colorWithRed:58/255.0 green:108/255.0 blue:183/255.0 alpha:0.15];
     UIColor *stop = [UIColor colorWithRed:58/255.0 green:108/255.0 blue:183/255.0 alpha:0.45];
     
@@ -74,9 +76,9 @@
     
     
     
-    //
-    //    off = [UIImage imageNamed:@"off.jpg"];
-    //    on = [UIImage imageNamed:@"on.jpg"];
+    
+        off = [UIImage imageNamed:@"off.png"];
+        on = [UIImage imageNamed:@"on.png"];
 }
 
 //- (void)viewDidLayoutSubviews {
@@ -155,18 +157,25 @@
     
     NSLog(@"value = %x", value[0]);
     
+    
+   
+    
+    
+    
     if (value[0])
-        //[image1 setImage:on];
-        NSLog(@"Bear not squeezed");
+        [image1 setImage:on];
+       // NSLog(@"Bear not squeezed");
     else
-        
+        [image1 setImage:off];
         //WRITE TO SEND MESSAGE VIA PARSE
-        NSLog(@"Bear Squeezed");
+      //  NSLog(@"Bear Squeezed");
+    
+   
     
     [self uploadMessage];
     
     
-    //  [image1 setImage:off];
+    
 }
 
 #pragma - Helper Methods
@@ -175,10 +184,10 @@
     NSLog(@"upload message function..");
     
     PFObject *message = [PFObject objectWithClassName:@"Messages"];
-    message[@"sender"] = @"pinkbear@bear.com";
-    message[@"other"] = @"brownbear@bear.com";
+    message[@"sender"] = @"sweetie@iotoys.co";
+    message[@"other"] = @"vijay@iotoys.co";
     // message[@"other"] = [[PFUser currentUser] objectForKey:@"other"];
-    message[@"message"] = @"This is a message from SmartBear.";
+    message[@"message"] = @"I love you.";
     [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             // The object has been saved.
@@ -197,7 +206,9 @@
 
 - (IBAction)returnUsers_click:(id)sender {
     
-    [self performSegueWithIdentifier:@"returnUsersVC" sender:self];
+    [self performSegueWithIdentifier:@"goToUsersAgain" sender:self];
+    
+
     
 }
 

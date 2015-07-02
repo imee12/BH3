@@ -43,6 +43,26 @@
 		9B093CC41B448DF9001DB31F /* BearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CC31B448DF9001DB31F /* BearViewController.m */; };
 		9B093CC61B449AD6001DB31F /* resultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CC51B449AD6001DB31F /* resultsCell.swift */; };
 		9B093CC81B449B76001DB31F /* placeholderuser.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B093CC71B449B76001DB31F /* placeholderuser.png */; };
+		9B4508491B44E3F3005B789D /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4508481B44E3F3005B789D /* ConversationViewController.swift */; };
+		9B45084D1B44F0EA005B789D /* IntroScreenPortrait1136x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B45084C1B44F0EA005B789D /* IntroScreenPortrait1136x640.png */; };
+		9B45085D1B459D3B005B789D /* connected-screen-ios-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B45085C1B459D3B005B789D /* connected-screen-ios-5.png */; };
+		9B45085F1B459D41005B789D /* logo-screen-ios-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B45085E1B459D41005B789D /* logo-screen-ios-5.png */; };
+		9B4508631B459D50005B789D /* testing-screen-ios-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4508621B459D50005B789D /* testing-screen-ios-5.png */; };
+		9B4508651B459F72005B789D /* sync2ios5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4508641B459F72005B789D /* sync2ios5.png */; };
+		9BFB00111B45A10300F35736 /* sync2ios5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4508641B459F72005B789D /* sync2ios5.png */; };
+		9BFB00121B45A10300F35736 /* testing-screen-ios-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4508621B459D50005B789D /* testing-screen-ios-5.png */; };
+		9BFB00131B45A10300F35736 /* logo-screen-ios-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B45085E1B459D41005B789D /* logo-screen-ios-5.png */; };
+		9BFB00141B45A10300F35736 /* connected-screen-ios-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B45085C1B459D3B005B789D /* connected-screen-ios-5.png */; };
+		9BFB00161B45A5E300F35736 /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00151B45A5E300F35736 /* off.png */; };
+		9BFB00181B45A63100F35736 /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00171B45A63100F35736 /* on.png */; };
+		9BFB00191B45A9B800F35736 /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00171B45A63100F35736 /* on.png */; };
+		9BFB001A1B45A9B800F35736 /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00151B45A5E300F35736 /* off.png */; };
+		9BFB001B1B45A9B800F35736 /* placeholderuser.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B093CC71B449B76001DB31F /* placeholderuser.png */; };
+		9BFB00261B45D91500F35736 /* connected-screen-ios-5v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00251B45D91500F35736 /* connected-screen-ios-5v2.png */; };
+		9BFB00271B45DA0E00F35736 /* connected-screen-ios-5v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00251B45D91500F35736 /* connected-screen-ios-5v2.png */; };
+		9BFB00291B45DFB900F35736 /* logo-screen-ios-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00281B45DFB900F35736 /* logo-screen-ios-6.png */; };
+		9BFB002A1B45DFCC00F35736 /* logo-screen-ios-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB00281B45DFB900F35736 /* logo-screen-ios-6.png */; };
+		9BFB002C1B45E58F00F35736 /* profilePhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB002B1B45E58F00F35736 /* profilePhoto.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +126,17 @@
 		9B093CC31B448DF9001DB31F /* BearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearViewController.m; sourceTree = "<group>"; };
 		9B093CC51B449AD6001DB31F /* resultsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsCell.swift; sourceTree = "<group>"; };
 		9B093CC71B449B76001DB31F /* placeholderuser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderuser.png; sourceTree = "<group>"; };
+		9B4508481B44E3F3005B789D /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		9B45084C1B44F0EA005B789D /* IntroScreenPortrait1136x640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IntroScreenPortrait1136x640.png; sourceTree = "<group>"; };
+		9B45085C1B459D3B005B789D /* connected-screen-ios-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connected-screen-ios-5.png"; sourceTree = "<group>"; };
+		9B45085E1B459D41005B789D /* logo-screen-ios-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-screen-ios-5.png"; sourceTree = "<group>"; };
+		9B4508621B459D50005B789D /* testing-screen-ios-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testing-screen-ios-5.png"; sourceTree = "<group>"; };
+		9B4508641B459F72005B789D /* sync2ios5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sync2ios5.png; sourceTree = "<group>"; };
+		9BFB00151B45A5E300F35736 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		9BFB00171B45A63100F35736 /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		9BFB00251B45D91500F35736 /* connected-screen-ios-5v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connected-screen-ios-5v2.png"; sourceTree = "<group>"; };
+		9BFB00281B45DFB900F35736 /* logo-screen-ios-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-screen-ios-6.png"; sourceTree = "<group>"; };
+		9BFB002B1B45E58F00F35736 /* profilePhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilePhoto.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +217,7 @@
 				9B093C531B44401A001DB31F /* AppDelegate.swift */,
 				9B093C551B44401A001DB31F /* ViewController.swift */,
 				9B093C571B44401A001DB31F /* Main.storyboard */,
+				9B4508481B44E3F3005B789D /* ConversationViewController.swift */,
 				9B093CC51B449AD6001DB31F /* resultsCell.swift */,
 				9B093CC21B448DF9001DB31F /* BearViewController.h */,
 				9B093CC31B448DF9001DB31F /* BearViewController.m */,
@@ -204,6 +236,8 @@
 		9B093C511B44401A001DB31F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9BFB002B1B45E58F00F35736 /* profilePhoto.png */,
+				9B45084C1B44F0EA005B789D /* IntroScreenPortrait1136x640.png */,
 				9B093C521B44401A001DB31F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -221,6 +255,14 @@
 		9B093C671B44401A001DB31F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9BFB00281B45DFB900F35736 /* logo-screen-ios-6.png */,
+				9BFB00251B45D91500F35736 /* connected-screen-ios-5v2.png */,
+				9BFB00171B45A63100F35736 /* on.png */,
+				9BFB00151B45A5E300F35736 /* off.png */,
+				9B4508641B459F72005B789D /* sync2ios5.png */,
+				9B4508621B459D50005B789D /* testing-screen-ios-5.png */,
+				9B45085E1B459D41005B789D /* logo-screen-ios-5.png */,
+				9B45085C1B459D3B005B789D /* connected-screen-ios-5.png */,
 				9B093CC71B449B76001DB31F /* placeholderuser.png */,
 				9B093C681B44401A001DB31F /* Info.plist */,
 			);
@@ -344,9 +386,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFB002A1B45DFCC00F35736 /* logo-screen-ios-6.png in Resources */,
+				9BFB00271B45DA0E00F35736 /* connected-screen-ios-5v2.png in Resources */,
+				9BFB00191B45A9B800F35736 /* on.png in Resources */,
+				9BFB001A1B45A9B800F35736 /* off.png in Resources */,
+				9BFB001B1B45A9B800F35736 /* placeholderuser.png in Resources */,
+				9BFB002C1B45E58F00F35736 /* profilePhoto.png in Resources */,
+				9BFB00111B45A10300F35736 /* sync2ios5.png in Resources */,
+				9BFB00121B45A10300F35736 /* testing-screen-ios-5.png in Resources */,
+				9BFB00131B45A10300F35736 /* logo-screen-ios-5.png in Resources */,
+				9BFB00141B45A10300F35736 /* connected-screen-ios-5.png in Resources */,
 				9B093CA31B444BED001DB31F /* happybear.jpg in Resources */,
 				9B093C591B44401A001DB31F /* Main.storyboard in Resources */,
 				9B093C5E1B44401A001DB31F /* LaunchScreen.xib in Resources */,
+				9B45084D1B44F0EA005B789D /* IntroScreenPortrait1136x640.png in Resources */,
 				9B093C5B1B44401A001DB31F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,7 +408,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4508651B459F72005B789D /* sync2ios5.png in Resources */,
+				9BFB00261B45D91500F35736 /* connected-screen-ios-5v2.png in Resources */,
+				9B45085F1B459D41005B789D /* logo-screen-ios-5.png in Resources */,
 				9B093CC81B449B76001DB31F /* placeholderuser.png in Resources */,
+				9BFB00161B45A5E300F35736 /* off.png in Resources */,
+				9B4508631B459D50005B789D /* testing-screen-ios-5.png in Resources */,
+				9BFB00291B45DFB900F35736 /* logo-screen-ios-6.png in Resources */,
+				9BFB00181B45A63100F35736 /* on.png in Resources */,
+				9B45085D1B459D3B005B789D /* connected-screen-ios-5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +429,7 @@
 			files = (
 				9B093C9C1B4445A8001DB31F /* LoginViewController.swift in Sources */,
 				9B093C561B44401A001DB31F /* ViewController.swift in Sources */,
+				9B4508491B44E3F3005B789D /* ConversationViewController.swift in Sources */,
 				9B093C9E1B4446B1001DB31F /* UsersViewController.swift in Sources */,
 				9B093CB81B4458F8001DB31F /* SyncViewController.m in Sources */,
 				9B093CA11B444B5D001DB31F /* FindViewController.m in Sources */,

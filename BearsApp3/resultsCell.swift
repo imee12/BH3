@@ -12,13 +12,12 @@ class resultsCell: UITableViewCell {
     
     
     @IBOutlet weak var profileimg: UIImageView!
-    
-    
+   
     @IBOutlet weak var profileNameLbl: UILabel!
     
-    
     @IBOutlet weak var usernameLbl: UILabel!
-
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

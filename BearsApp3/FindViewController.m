@@ -53,7 +53,7 @@
 
     [rfduino setDelegate:self];
 
-    
+    self.navigationItem.hidesBackButton = YES;
     
 
 }

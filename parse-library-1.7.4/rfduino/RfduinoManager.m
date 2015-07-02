@@ -187,7 +187,8 @@ static CBUUID *service_uuid;
         cancelBlock = block;
 
         if ([delegate respondsToSelector:@selector(shouldDisplayAlertTitled:messageBody:)]) {
-            [delegate shouldDisplayAlertTitled:@"Peripheral Disconnected with Error" messageBody:error.description];
+//            [delegate shouldDisplayAlertTitled:@"Peripheral Disconnected with Error" messageBody:error.description];
+             [delegate shouldDisplayAlertTitled:@"Oh no! Reboot! Your SmartBear Disconnected!" messageBody:@"Please restart app."];
         }
         
     }
