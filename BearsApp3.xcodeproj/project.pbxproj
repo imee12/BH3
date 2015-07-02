@@ -41,6 +41,8 @@
 		9B093CBE1B447D2F001DB31F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CBD1B447D2F001DB31F /* main.m */; };
 		9B093CC11B44878F001DB31F /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CC01B44878F001DB31F /* AppViewController.m */; };
 		9B093CC41B448DF9001DB31F /* BearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CC31B448DF9001DB31F /* BearViewController.m */; };
+		9B093CC61B449AD6001DB31F /* resultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B093CC51B449AD6001DB31F /* resultsCell.swift */; };
+		9B093CC81B449B76001DB31F /* placeholderuser.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B093CC71B449B76001DB31F /* placeholderuser.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		9B093CC01B44878F001DB31F /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
 		9B093CC21B448DF9001DB31F /* BearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BearViewController.h; sourceTree = "<group>"; };
 		9B093CC31B448DF9001DB31F /* BearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BearViewController.m; sourceTree = "<group>"; };
+		9B093CC51B449AD6001DB31F /* resultsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resultsCell.swift; sourceTree = "<group>"; };
+		9B093CC71B449B76001DB31F /* placeholderuser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderuser.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				9B093C531B44401A001DB31F /* AppDelegate.swift */,
 				9B093C551B44401A001DB31F /* ViewController.swift */,
 				9B093C571B44401A001DB31F /* Main.storyboard */,
+				9B093CC51B449AD6001DB31F /* resultsCell.swift */,
 				9B093CC21B448DF9001DB31F /* BearViewController.h */,
 				9B093CC31B448DF9001DB31F /* BearViewController.m */,
 				9B093CB61B4458F8001DB31F /* SyncViewController.h */,
@@ -216,6 +221,7 @@
 		9B093C671B44401A001DB31F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B093CC71B449B76001DB31F /* placeholderuser.png */,
 				9B093C681B44401A001DB31F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -349,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B093CC81B449B76001DB31F /* placeholderuser.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +378,7 @@
 				9B093CB31B4454A4001DB31F /* RFduino.m in Sources */,
 				9B093CBE1B447D2F001DB31F /* main.m in Sources */,
 				9B093CC11B44878F001DB31F /* AppViewController.m in Sources */,
+				9B093CC61B449AD6001DB31F /* resultsCell.swift in Sources */,
 				9B093C541B44401A001DB31F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
